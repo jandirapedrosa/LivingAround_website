@@ -1,0 +1,188 @@
+body {
+    font-family: "Changa One", sans-serif;
+    margin: 0;
+}
+
+/*BACKGROUND*/
+#background {
+  background-image: url(images/56d8144cbded6b64756f769dfd17493fdca80df2.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+/*TÍTULO*/
+.titulo {
+  color: white;
+  font-family: "Josefin Slab", sans-serif;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+/*NAVBAR*/
+.nav-link{
+  color: #1e1e1e;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ }
+
+.navbar-nav {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+    font-family: "Changa One", sans-serif;
+    margin: 0; /*ver o que significa margin 0
+}
+
+======MAIN======
+
+main {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; sends the image to the back
+    overflow: hidden;
+}
+
+.image img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vw;
+    width: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    font-family: "Josefin Slab", sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Para font jura*/
+/*
+.changa-one-regular {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.changa-one-regular-italic {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+*/
+
+/*
+.jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+/*para font josefin slab*/
+/*
+.changa-one-regular {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.changa-one-regular-italic {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+*/
+
+/*
+.jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/*
+.josefin-slab-<uniquifier> {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/

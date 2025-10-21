@@ -1,4 +1,266 @@
+/*Base*/
+body {
+  margin: 0;
+  font-family: "Jura", sans-serif;
+  background-color: #d7d0a8;
+  color: #2b2b2b;
+}
+
+/*SE TUDO DER ERRADO*/
 .page-acomodacao {
+  width: 100%;
+  height: 500px;
+  background-image: url(images/df91b617ee90d6e829d46a02b68192a91cea73a0.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  background-repeat: no-repeat;
+  /* position: absolute;
+  z-index: -1; */
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*opcional - overlay escuro para melhorar legibilidade do título*/
+.page-acomodacao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1
+}
+
+
+/* TÍTULO  */
+.container-titulo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
+   /*height: 100vh;  para o container ocupar a altura total da viewport*/
+}
+
+.titulo-acomodacao {
+  color: #fff;
+  font-family: "Josefin Slab", sans-serif;
+  font-size: 700; /*tava 80px*/
+  text-align: center;
+  margin: 0;
+  pointer-events: auto;
+  /*font responsivo*/
+  /* font-size: clamp(32px, 6vw, 80px);
+  letter-spacing: 1.5px;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  padding: 0 12px; */
+  /* position: absolute;
+  transform: translateZ();
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  
+}
+
+
+
+/*===NAVBAR===*/
+.navbar {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background: transparent; /*para ficar sobre a imagem*/
+  padding: 0.5rem 1rem;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+/*pôr a info da nav para a direita*/
+.navbar .navbar-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #1e1e1e;
+  font-family: "Jura", sans-serif;
+  background-color: rgba(255,255,255,0.95); 
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+  display: inline-flex; 
+  align-items: center;
+  /* font-optical-sizing: auto;
+  justify-content: flex-end;  */
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  background-color: #ffeec9;
+}
+
+
+/*não sei bem para que funciona, mas pode ser preciso*/
+/* .navbar-toggler {
+  border-color: rgba(0,0,0,0.15);
+} */
+
+ /*OUTRO CÓDIGO
+.container-fluid {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+  */
+
+
+/*SECTION CARDS*/
+.section-cards {
+  padding: 80px 0;
+  background-color: #d7d0a8;
+  /*background: transparent; mantem o fundo da imagem geral*/
+}  
+
+.section-cards .container {
+  max-width: 1200px;
+  /* margin: 0 auto;  */
+}
+
+.section-cards .row {
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 24px;
+  align-items: start;
+  justify-items: center; */
+}
+
+/*posso manter o do bootstrap, mas este tbm dá*/
+/* .section-cards .col {
+  width: 100%;
+  max-width: 320px;
+} */
+
+.section-cards .card {
+  width: 100%;
+  max-width: 350px;
+  background-color: #efe8cc;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  margin: 0 auto;
+}
+
+.section-cards .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.18);
+}
+
+/*imagem do card*/
+.section-cards .card-img-top {
+  width: 100%;
+  height: 170px; /*ajustaaaaaar*/
+  object-fit: cover;
+  /* display: block; */
+}
+
+.section-cards .card-body {
+  /* font-family: "Josefin Slab", serif;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #242424; */
+  padding: 18px;
+}
+
+.section-cards .card-tittle {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #242424;
+}
+
+.section-cards .card-text {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.section-cards .btn {
+  background-color: #000;
+  color: #fff !important;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.12s ease;
+  display: inline-block;
+}
+
+.section-cards .btn:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+}
+
+/*para o botão ocupar toda a largura do card*/
+/* .section-cards .btn {
+  width: 100%;
+  text-align: center;
+} */
+
+/*===FOOTER===*/
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 28px 12px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SE TUDO DER ERRADO*/
+/* .page-acomodacao {
   width: 100%;
   height: 500px;
   background-image: url(images/df91b617ee90d6e829d46a02b68192a91cea73a0.jpg);
@@ -10,10 +272,10 @@
   z-index: -1;
 }
 
-/*TÍTULO*/
+TÍTULO 
 .container-titulo {
   position: relative;
-  height: 100vh; /*para o container ocupar a altura total da viewport*/
+  height: 100vh;  para o container ocupar a altura total da viewport 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,22 +290,22 @@
   text-align: center;
   margin: 0;
   transform: translateZ();
-  /*
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  */
+  
 }
 
 
-/*NAVBAR*/
+ NAVBAR 
 .nav-link {
   color: #1e1e1e;
   font-family: "Jura", sans-serif;
   font-optical-sizing: auto;
   background-color: white; 
-  /* display: flex;    ISTO NÃO ESTÁ A FUNCIONAR, TEM DE IR PARA A DIREITA!
-  justify-content: flex-end; */
+ display: flex;       ISTO NÃO ESTÁ A FUNCIONAR, TEM DE IR PARA A DIREITA!
+  justify-content: flex-end; 
 }
 
 .navbar {
@@ -51,13 +313,53 @@
   position: absolute;
 }
 
-/*OUTRO CÓDIGO*/
+ OUTRO CÓDIGO 
 .container-fluid {
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
 }
 
-/*CARDS*/
+CARDS
 .section-cards {
-}
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

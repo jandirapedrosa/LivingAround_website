@@ -71,43 +71,51 @@ body {
 /*===NAVBAR===*/
 .navbar {
   position: absolute;
-  top: 12px;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  background: transparent; /*para ficar sobre a imagem*/
-  padding: 0.5rem 1rem;
+  top: 20px; /*tava 12px*/
+  /*left: 0; não precisa left*/
+  right: 50px; /*tava 0*/
+  z-index: 5; /*tentar 10?*/
+  /*background: transparent;*/ /*para ficar sobre a imagem*/
+  /* padding: 0.5rem 1rem; */
 }
 
-.navbar .container-fluid {
+/* .navbar .container-fluid {
   display: flex;
   align-items: center;
-}
+} */
 
 /*pôr a info da nav para a direita*/
-.navbar .navbar-nav {
+/* .navbar .navbar-nav {
   margin-left: auto;
   display: flex;
   gap: 1.25rem;
   align-items: center;
+} */
+
+.navbar-nav {
+  gap: 30px;
 }
 
 .nav-link {
   color: #1e1e1e;
   font-family: "Jura", sans-serif;
-  background-color: rgba(255,255,255,0.95); 
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  /* background-color: rgba(255,255,255,0.95); 
   padding: 8px 12px;
   border-radius: 6px;
   transition: transform 0.15s ease, background-color 0.15s ease;
   display: inline-flex; 
-  align-items: center;
+  align-items: center; */
   /* font-optical-sizing: auto;
   justify-content: flex-end;  */
 }
 
 .nav-link:hover {
-  transform: translateY(-2px);
-  background-color: #ffeec9;
+  color: #fff;
+  /* transform: translateY(-2px);
+  background-color: #ffeec9; */
 }
 
 

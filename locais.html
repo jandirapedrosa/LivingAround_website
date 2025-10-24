@@ -3,9 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Locais</title>
+  <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<!--CSS-->
+    <link rel="stylesheet" href="locais.css">
+<!--font jura-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+<!--font josefin slab-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Acomodação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Locais</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactos.html">Contactos</a> 
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--IMAGEM DE FUNDO-->
+<div class="image-contactos">
+    <img src="images/ed0e1880be8377fb52e107716094cc0359fc17aa.jpg">
+</div>
+
+<!--DROPDOWN-->
+
+<div class="container">
+
+<!--1-->
+  <div class="escolha1">
+    <p>Escolha o país</p>
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      País
+      </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Portugal</a></li>
+      <li><a class="dropdown-item" href="#">Brevemente</a></li>
+      <li><a class="dropdown-item" href="#">Brevemente</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <!--2-->
+  <div class="escolha2">
+    <p>Escolha a cidade</p>
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Cidade
+      </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Porto</a></li>
+      <li><a class="dropdown-item" href="#">Braga</a></li>
+      <li><a class="dropdown-item" href="#">Guimarães</a></li>
+    </ul>
+    </div>
+  </div>
+
+<!--BOTÃO-->
+<button type="button" class="btn btn-success">Ver</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="locais-container">
+<div class="dropdown">
+  <div class="locais">
+    <span class="escolha">Escolha o país</span>
+    <div class="local"></div>
+
+    <ul class="menu">
+      <li class="active">Portugal</li>
+      <li>Espanha</li>
+      <li>França</li>
+      <li>Bélgica</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="dropdown">
+  <div class="locais">
+    <span class="escolha">Escolha a cidade</span>
+    <div class="local"></div>
+
+    <ul class="menu">
+      <li class="active">Porto</li>
+      <li>Braga</li>
+      <li>Guimarães</li>
+      <li>Viana do Castelo</li>
+    </ul>
+  </div>
+</div>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

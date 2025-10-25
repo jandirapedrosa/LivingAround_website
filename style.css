@@ -186,25 +186,54 @@ body {
 }
 
 .acomodacao-content p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
   line-height: 1.4;
 }
 
 /*BOTÃO DESCOBRIR*/
 .acomodacao-btn {
   display: inline-block;
-  padding: 0.75rem 2rem;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  color: #fff;
   border: 2px solid #fff;
-  color: #000;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   text-decoration: none;
-  border-radius: 2rem;
-  transition: background-color 0.3s, color 0.3s;
+  transition: all .3s ease;
+  cursor: pointer;
+
+  /* position: relative;
+  overflow: hidden;
+  z-index: 1; */
+
+  /* display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10rem;  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;  */
+
 }
 
+
 .acomodacao-btn:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px solid #fff;
+  transform: scale(1.05);
 }
 
 /*===========================================================================================*/
@@ -254,19 +283,38 @@ body {
 
 /*botão*/
 .locais-button {
-  padding: 0.75rem 2rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all .3s ease;
+  cursor: pointer;
+
+  /* padding: 0.75rem 2rem;
   border: 2px solid #000;
   background: transparent;
   color: #000;
   border-radius: 2rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s; */
 }
 
 .locais-button:hover {
   background-color: #000;
   color: #fff;
+  border-radius: 2px solid #fff;
+  transform: scale(1.05);
+
+  /* background-color: #000;
+  color: #fff; */
 }
 
 
@@ -338,8 +386,53 @@ body {
 
 .footer {
   height: 266px;
-  background-color: black;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: "Jura", sans-serif;
 }
+
+.footer-title {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #555;
+  color: #000;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.footer-icons .icon:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.footer-credit {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+
 
 
 

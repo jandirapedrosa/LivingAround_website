@@ -1,5 +1,143 @@
+@media (max-width: 420px) {
+  .container-detalhes { padding: 1rem; }
+  .card img { height: 160px; }
+}
+
 /*GERAL*/
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Jura", sans-serif;
+  position: relative;
+  overflow-y: auto;
+}
+
+/*IMAGEM DE FUNDO*/
+body > img {
+  position: absolute;
+  inset: 0; /*top: 0; right: 0; bottom: 0; left:0;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  z-index: -1;
+}
+
+/*CONTAINER*/
+.container-detalhes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  width: 100%;
+  /* max-width: 456px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  /* altura opcional — remova se quiser que o card ajuste ao conteúdo */
+  /* height: 450px; */
+}
+
+/*CARD*/
+.card {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.35;
+}
+
+/*BOTÃO*/
+.card .btn {
+  border-radius: 25px;
+  padding: 8px 30px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SE TUDO DER ERRADO*/
+
+/*GERAL*/
+/* body {
   margin: 0;
   height: 100vh;
   display: flex;
@@ -8,10 +146,10 @@ body {
   font-family: "Jura", sans-serif;
   position: relative;
   overflow: hidden;
-}
+} */
 
 /*IMAGEM DE FUNDO*/
-body > img {
+/* body > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,9 +158,27 @@ body > img {
   object-fit: cover;
   filter: brightness(60%);
   z-index: -1;
-}
+} */
 
 /*CARD*/
+
+/* .container-detalhes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  width: 456px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  height: 450px;
+}
+
 .card {
   width: 22rem;
   border-radius: 20px;
@@ -49,10 +205,10 @@ body > img {
   color: #555;
   font-size: 0.95rem;
   margin-bottom: 20px;
-}
+} */
 
 /*BOTÃO*/
-.card .btn {
+/* .card .btn {
   border-radius: 25px;
   padding: 8px 30px;
   background-color: #007bff;
@@ -62,4 +218,4 @@ body > img {
 
 .card .btn:hover {
   background-color: #0056b3;
-}
+} */

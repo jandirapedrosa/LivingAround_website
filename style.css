@@ -52,11 +52,6 @@ body {
   text-align: center;
   margin: 0;
   transform: translateZ();
-  /*
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  */
 }
 
 /*NAVBAR*/
@@ -79,8 +74,6 @@ body {
   letter-spacing: 1px;
   transition: 0.3s;
   font-optical-sizing: auto;
-  /* display: flex;    ISTO NÃO ESTÁ A FUNCIONAR, TEM DE IR PARA A DIREITA!
-  justify-content: flex-end; */
 }
 
 .nav-link:hover {
@@ -89,7 +82,7 @@ body {
 
 
 
-/*ISTO NÃO ESTÁ A FUNCIONAR*/
+/*(ISTO)*/
 .container-fluid {
   display: flex;
   justify-content: flex-end;
@@ -107,8 +100,6 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Jura", sans-serif;
-  /* border-style: dashed;
-  border-color: black; */
 }
 
 .flex-jobs {
@@ -118,24 +109,12 @@ body {
   width: 80%;
   max-width: 1100px;
   position: relative;
-
-  /* border-style: dotted;
-  margin-top: 204px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; */
 }
 
 /*lado esquerdo*/
 .lado-esquerdo {
   flex: 1;
   padding-right: 3rem;
-  /* border-style: solid;
-  border-color: blue;
-  font-family: "Jura", sans-serif;
-  font-size: 43px;
-  width: 500px; 
-  height: 152px; */
 }
 
 .frase {
@@ -163,10 +142,6 @@ frase span {
   flex: 1;
   text-align: center;
   position: relative;
-  /* border-style: solid;
-  border-color: green;
-  font-family: "Jura", sans-serif;
-  font-size: 20px; */
 }
 
 .titulo-jobs {
@@ -364,19 +339,7 @@ frase span {
 }
 
 
-/* .image-locais {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-
 /*para usar a imagem esquerda e texto na direita posso usar flex-direction: row-reverse*/
-
-
-
-
-
 
 
 /*SECTION BLOG*/
@@ -414,11 +377,6 @@ frase span {
 .blog-btn:hover {
   background-color: #333;
 }
-
-
-
-
-
 
 
 
@@ -478,174 +436,3 @@ frase span {
 
 
 
-
-
-
-
-/*botão descobrir*/
-  /* position: relative;
-  overflow: hidden;
-  z-index: 1; */
-
-  /* display: inline-block;
-  padding: 0.9rem 2.5rem;
-  background-color: #000;
-  border: 2px solid #fff;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 10rem;  border-radius: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-   transition: background-color 0.3s, color 0.3s;  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.lista-jobs {
-
-}
-
-.lista-jobs2 {
-
-} */
-
-
-
-
-
-
-
-
-/*
-body {
-    font-family: "Changa One", sans-serif;
-    margin: 0; /*ver o que significa margin 0
-}
-
-======MAIN======
-
-main {
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1; sends the image to the back
-    overflow: hidden;
-}
-
-.image img {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-    height: 100vw;
-    width: 100vh;
-    object-fit: cover;
-    display: block;
-}
-
-h1 {
-    font-family: "Josefin Slab", sans-serif;
-}
-
-.titulo {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-/*Para font jura*/
-/*
-.changa-one-regular {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.changa-one-regular-italic {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-*/
-
-/*
-.jura-<uniquifier> {
-  font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-*/
-
-/*para font josefin slab*/
-/*
-.changa-one-regular {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.changa-one-regular-italic {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-*/
-
-/*
-.jura-<uniquifier> {
-  font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-*/
-
-/*
-.josefin-slab-<uniquifier> {
-  font-family: "Josefin Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-*/

@@ -101,50 +101,121 @@ body {
 /*SECTION TRABALHOS REMOTOS*/
 .trabalhos-remotos {
   height: 569px;
-  background-color: #b49b2c;
-  /* opacity: 25%; */
-  border-style: dashed;
-  border-color: black;
-}
-
-.flex-jobs {
-  border-color: red;
+  background-color: #e6dfc8; /*background-color: #b49b2c; */
+  padding: 4rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: dotted;
-  /* height: 400px; */
+  font-family: "Jura", sans-serif;
+  /* border-style: dashed;
+  border-color: black; */
+}
+
+.flex-jobs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1100px;
+  position: relative;
+
+  /* border-style: dotted;
   margin-top: 204px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
 }
 
+/*lado esquerdo*/
 .lado-esquerdo {
-  border-style: solid;
+  flex: 1;
+  padding-right: 3rem;
+  /* border-style: solid;
   border-color: blue;
   font-family: "Jura", sans-serif;
   font-size: 43px;
-  width: 500px; /*esta medida está diferente do layout*/
-  height: 152px;
-  /* padding: 20px; */
+  width: 500px; 
+  height: 152px; */
 }
 
 .frase {
-  text-align: justify;
-  letter-spacing: 3.2px;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  text-align: left;
 }
 
+frase span {
+  color: #b49b2c;
+  font-weight: 600;
+}
+
+/*Linha Divisória*/
+.linha-dividir {
+  width: 1px;
+  height: 200px;
+  background-color: #6b6b6b;
+}
+
+/*lado direito*/
 .lado-direito {
-  border-style: solid;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  /* border-style: solid;
   border-color: green;
   font-family: "Jura", sans-serif;
-  font-size: 20px;
+  font-size: 20px; */
 }
 
 .titulo-jobs {
-  font-size: 30px;
-  font-style: bold;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #000;
+  /* font-style: bold; */
+}
+
+/*Listas*/
+.listas-jobs {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.lista-jobs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.lista-jobs li {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/*DECORAÇÃO*/
+.canto {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.top-right {
+  bottom: 0;
+  right:  0;
+  border-left: none;
+  border-top: none;
 }
 
 
@@ -195,9 +266,9 @@ body {
 .acomodacao-btn {
   display: inline-block;
   padding: 1rem 3rem;
-  background-color: #fff;
-  color: #fff;
-  border: 2px solid #fff;
+  background-color: #000; /*fundo preto inicial*/
+  color: #fff; /*texto branco*/
+  border: 2px solid #fff; /*borda branca*/
   border-radius: 50px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -207,32 +278,13 @@ body {
   transition: all .3s ease;
   cursor: pointer;
 
-  /* position: relative;
-  overflow: hidden;
-  z-index: 1; */
-
-  /* display: inline-block;
-  padding: 0.9rem 2.5rem;
-  background-color: #000;
-  border: 2px solid #fff;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 10rem;  border-radius: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-   transition: background-color 0.3s, color 0.3s;  */
 
 }
 
-
 .acomodacao-btn:hover {
-  background-color: #000;
-  color: #fff;
-  border-radius: 2px solid #fff;
+  background-color: #fff; /*fundo branco de hover*/
+  color: #000; /*texto preto do hover*/
+  border-radius: 2px solid #000; /*borda preta do hover*/
   transform: scale(1.05);
 }
 
@@ -285,9 +337,9 @@ body {
 .locais-button {
   display: inline-block;
   padding: 1rem 3rem;
-  background-color: #fff;
-  color: #fff;
-  border: 2px solid #fff;
+  background-color: #e6dfc8; /*bege*/
+  color: #000;
+  border: 2px solid #000;
   border-radius: 50px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -296,25 +348,13 @@ body {
   text-decoration: none;
   transition: all .3s ease;
   cursor: pointer;
-
-  /* padding: 0.75rem 2rem;
-  border: 2px solid #000;
-  background: transparent;
-  color: #000;
-  border-radius: 2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s; */
 }
 
 .locais-button:hover {
-  background-color: #000;
-  color: #fff;
-  border-radius: 2px solid #fff;
+  background-color: #fff;
+  color: #e6dfc8;
+  border: 2px solid #e6dfc8;
   transform: scale(1.05);
-
-  /* background-color: #000;
-  color: #fff; */
 }
 
 
@@ -442,7 +482,25 @@ body {
 
 
 
+/*botão descobrir*/
+  /* position: relative;
+  overflow: hidden;
+  z-index: 1; */
 
+  /* display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10rem;  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;  */
 
 
 
